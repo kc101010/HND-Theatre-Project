@@ -1,0 +1,35 @@
+
+#hdr-nav-container{
+    position: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    background-image:url("../images/theatre.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color:white;
+    font-family: 'Monda', sans-serif;
+
+
+}
+
+#hdr-text{
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom:2.5%;
+    text-align: center;
+}
+
+.hdr-nav-lnk{
+    display:inline-block;
+    margin-left: 15%;
+    margin-right: 10%;
+    text-align: right;
+}
+
+.hdr-nav-lnk:hover{color:gray;}
+
+#sec_hdr-nav{
+    margin-bottom:5%;
+}

@@ -1,0 +1,15 @@
+#mn-footer{
+    text-align: center;
+    color:white;
+    font-family: 'Monda', sans-serif;
+    margin-top:8%;
+}
+
+.ftr-lnk{
+    display:inline-block;
+    margin-left:3%;
+}
+
+a{color:white;}
+a:hover{color:gray;}
+

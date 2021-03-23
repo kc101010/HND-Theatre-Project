@@ -1,13 +1,19 @@
-<!<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+
 
 </body>
+
+
+<footer id="mn-footer">
+
+    <ul>
+
+        <li class="ftr-lnk">Site written by <a href="https://github.com/kc101010" target="_blank"> Kyle Christie</a> </li>
+
+        <li class="ftr-lnk">Photo by <a href="https://unsplash.com/@felixmooneeram?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Felix Mooneeram</a> on <a href="https://unsplash.com/s/photos/theatre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+        </li>
+
+        <li class="ftr-lnk">© HND Assessment 2021</li>
+    </ul>
+</footer>
+
 </html>

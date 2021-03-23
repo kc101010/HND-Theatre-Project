@@ -1,0 +1,15 @@
+#home_welcome{
+    margin-left:15%;
+}
+
+#sec_home{
+    background-color: rbga(255,255,255, 0.6);
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.home_text{
+    margin-top:5%;
+    margin-bottom:5%;
+    margin-left:15%;
+}
