@@ -1,6 +1,6 @@
 <?php
 
-/*http://192.168.10.10/AssessmentProject/index.php*/
+/*http://192.168.10.10/AssessmentProject/HND-Theatre-Project/index.php*/
 
 //https://placeholder.com/
 //https://fontawesome.com/
