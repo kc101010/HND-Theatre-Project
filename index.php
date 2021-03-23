@@ -1,6 +1,6 @@
 <?php include_once "partial/header.php";?>
 
-<section id="sec_home">
+<section id="sect-home">
 
     <h1 id="home_welcome"> Welcome! </h1>
 

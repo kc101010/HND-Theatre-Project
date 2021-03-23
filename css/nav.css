@@ -4,15 +4,16 @@
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
-    background-image:url("../images/theatre.jpg");
+    background-image:url("../images/theatre-blur2.jpg");
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     color:white;
     font-family: 'Monda', sans-serif;
 
-
 }
+
+
 
 #hdr-text{
     margin-left:30%;

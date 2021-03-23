@@ -19,6 +19,7 @@
 
 
 <body id="hdr-nav-container">
+
     <section id="sec_hdr-nav">
         <h1 id="hdr-text"> <a href="index.php"> Local Theatre Company </a> </h1>
 
