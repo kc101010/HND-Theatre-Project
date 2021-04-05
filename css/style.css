@@ -1,17 +1,44 @@
-#home_welcome{
+/** ~ Page Main Content ~ **/
+
+#main_header{
     margin-left:15%;
 }
 
-#sect-home{
+#sect_main{
     /*background-color:rgba(255, 255, 255, 0.04);*/
     margin-top:10%;
     margin-bottom:5%;
 
 }
 
-.home_text{
+.main_text{
     margin-top:5%;
     margin-bottom:5%;
     margin-left:15%;
     margin-right:15%;
 }
+
+/** ~ End Main Content ~ **/
+
+/** ~ Login-Register rules ~ **/
+
+.form_component {
+    display: inline;
+    /**margin-left: 10%;
+    margin-right: 10%;**/
+    margin-top:3%;
+    margin-bottom: 3%;
+}
+
+#sect_login, #sect_regi, #frm_login, #frm_regi, #frm_submit{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.login_switch{
+   text-align: center;
+}
+
+.login_switch:hover{color:gray;}
+
+/** ~ End Login-Register rules ~ **/
