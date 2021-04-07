@@ -26,7 +26,7 @@
         <nav id="hdr-nav">
             <ul>
                 <li class="hdr-nav-lnk"> <a href="../login_register/login.php"> Login/Register </a> </li>
-                <li class="hdr-nav-lnk"> Blog </li>
+                <li class="hdr-nav-lnk"> <a href="../blog/index.php"> Blog </a>  </li>
                 <li class="hdr-nav-lnk"> <a href="../contact/index.php"> Contact </a> </li>
 
             </ul>
