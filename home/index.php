@@ -17,7 +17,7 @@
 <?php include_once "../partial/footer.php";?>
 
 <!--
-/*http://192.168.10.10/AssessmentProject/HND-Theatre-Project/index.php*/
+/*http://192.168.10.10/AssessmentProject/HND-Theatre-Project/home/index.php/
 
 //https://placeholder.com/
 //https://fontawesome.com/

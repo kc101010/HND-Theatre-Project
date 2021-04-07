@@ -9,13 +9,21 @@
     margin-top:10%;
     margin-bottom:5%;
 
+
 }
 
-.main_text{
+.main_text, .con_text{
     margin-top:5%;
     margin-bottom:5%;
     margin-left:15%;
     margin-right:15%;
+}
+
+.con_text{
+    margin-top: 8%;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
 }
 
 /** ~ End Main Content ~ **/
@@ -33,6 +41,10 @@
 #sect_login, #sect_regi, #frm_login, #frm_regi, #frm_submit{
     margin-left: 30%;
     margin-right: 30%;
+}
+
+#sect_login, #sect_regi{
+    margin-top: 12%;
 }
 
 .login_switch{
