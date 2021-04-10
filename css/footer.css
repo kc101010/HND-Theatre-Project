@@ -2,18 +2,14 @@
     text-align: center;
     color:white;
     font-family: 'Monda', sans-serif;
-    bottom:0;
-    position: absolute;
-    display:inline-block;
-    white-space:nowrap;
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
 }
 
 .ftr-lnk{
     display:inline-block;
-    margin-left:3%;
+    margin-left:2%;
 }
 
 a{color:white;}
