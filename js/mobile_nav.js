@@ -1,9 +1,4 @@
 
-window.onload = function () {
-    document.querySelector("ul").style.display = "none";
-
-}
-
 function displayNav(){
 
     var bars = document.getElementById("mob-nav-bar");
