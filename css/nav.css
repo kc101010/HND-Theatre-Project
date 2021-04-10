@@ -13,8 +13,9 @@
     position: relative;
 }
 
-#hdr-nav{
-    display: none;
+.hdr-nav-lnk{
+    list-style-type: none;
+    text-align: center;
 }
 
 #mob-nav-bar{
@@ -26,8 +27,14 @@
 
 }
 
+#hdr-nav{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
 #hdr-text{
     margin-left:10%;
+    margin-right: 10%;
 }
 
 

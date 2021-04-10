@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/abc0c36e7b.js" crossorigin="anonymous"></script>
+    <script src="../js/mobile_nav.js" language="JavaScript" type="text/javascript"></script>
 
     <title>Local Theatre Company</title>
 
@@ -25,7 +26,7 @@
 
     <section id="hdr-nav-container">
 
-        <span id="mob-nav-bar">
+        <span onclick="displayNav()" id="mob-nav-bar">
             <i class="fas fa-bars"></i>
         </span>
 

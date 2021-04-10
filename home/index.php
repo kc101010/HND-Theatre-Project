@@ -20,7 +20,7 @@
 /*http://192.168.10.10/AssessmentProject/HND-Theatre-Project/home/index.php
 
 //https://placeholder.com/
-//https://fontawesome.com/
+//https://fontawessome.com/
 //https://unsplash.com/
 //https://pixabay.com/
 -->
