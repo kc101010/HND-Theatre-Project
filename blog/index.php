@@ -25,4 +25,8 @@
         </div>
     </section>
 
+    <section id="sect_articles">
+
+    </section>
+
 <?php include_once "../partial/footer.php";?>
