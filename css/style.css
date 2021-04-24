@@ -137,7 +137,7 @@ body{
     #sect_blog{
         display:block;
         margin-top:3%;
-        margin-bottom:10%;
+        margin-bottom:6%;
         margin-left: 20%;
         margin-right:20%;
     }
@@ -150,8 +150,33 @@ body{
 
     }
 
+    #sect_articles{
+        display:block;
+        /**margin-top:3%;**/
+        margin-bottom:20%;
+        margin-left: 25%;
+        margin-right:20%;
 
+    }
 
+    .article_container{
+        margin-left: 5%;
+        margin-right: 20%;
+        width: 7%;
+        float: left;
+        margin-bottom: 10%;
+
+    }
+
+    .article_title, .article_type{
+        margin-left: 80%;
+
+    }
+
+    .article_desc{
+        margin-left: 55%;
+        text-align: center;
+    }
     /** ~ End Blog rules ~ **/
 }
 
