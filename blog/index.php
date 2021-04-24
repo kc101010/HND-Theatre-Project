@@ -26,21 +26,21 @@
     </section>
 
     <section id="sect_articles">
-        <div class="article_container">
+        <div title="Click the image to view the article!" class="article_container">
             <img class="article_img" src="https://via.placeholder.com/200x200"/>
             <p class="article_title"> Title </p>
             <p class="article_type"> Type </p>
             <p class="article_desc"> Description </p>
         </div>
 
-        <div class="article_container">
+        <div title="Click the image to view the article!" class="article_container">
             <img class="article_img" src="https://via.placeholder.com/200x200"/>
             <p class="article_title"> Title </p>
             <p class="article_type"> Type </p>
             <p class="article_desc"> Description </p>
         </div>
 
-        <div class="article_container">
+        <div title="Click the image to view the article!" class="article_container">
             <img class="article_img" src="https://via.placeholder.com/200x200"/>
             <p class="article_title"> Title </p>
             <p class="article_type"> Type </p>

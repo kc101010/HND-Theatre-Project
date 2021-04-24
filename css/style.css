@@ -49,6 +49,15 @@ body{
 
 #blog_cat_list li{list-style-type:none;}
 
+#sect_articles{
+    margin-left: 10%;
+}
+
+.article_container{
+    text-align: center;
+    align-content: center;
+}
+
 @media screen and (min-width: 800px ){
     /** ~ Page Main Content ~ **/
     #main_header{
@@ -177,6 +186,7 @@ body{
         margin-left: 55%;
         text-align: center;
     }
+
     /** ~ End Blog rules ~ **/
 }
 
