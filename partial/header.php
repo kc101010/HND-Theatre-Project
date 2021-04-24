@@ -30,7 +30,7 @@
             <i class="fas fa-bars"></i>
         </span>
 
-        <h1 id="hdr-text"> <a href="../home/index.php"> Local Theatre Company </a> </h1>
+        <h1 title="Click here to go back to the home page!" id="hdr-text"> <a href="../home/index.php"> Local Theatre Company </a> </h1>
 
         <nav id="hdr-nav">
             <ul>
