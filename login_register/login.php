@@ -7,9 +7,9 @@
     <div id="sect_login">
         <h2 id="login_header"> Login </h2>
 
-        <form id="frm_login">
-            <input class="form_component" type="text" name="user_id" placeholder="Username/Email" required>
-            <input class="form_component" type="password" name="user_password" placeholder="Password" required>
+        <form action="auth.php" method="post" id="frm_login">
+            <input class="form_component" type="text" name="username" placeholder="Username/Email" id="username" required>
+            <input class="form_component" type="password" name="password" placeholder="Password" id="password" required>
             <input id="frm_submit" class="form_component" type="submit" value="Log in">
         </form>
 
@@ -20,7 +20,7 @@
     <div id="sect_regi">
         <h2 id="login_header"> Register </h2>
 
-        <form id="frm_regi">
+        <form  id="frm_regi">
             <input class="form_component" type="text" name="username" placeholder="Username" required>
             <input class="form_component" type="email" name="user_email" placeholder="Email">
             <input class="form_component" type="password" name="user_password" placeholder="Password" required>
