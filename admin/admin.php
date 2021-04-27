@@ -1,9 +1,19 @@
-<?php include_once "../partial/header.php";?>
+<?php
+
+/** @var $id array */
+/** @var $usern array*/
+/** @var $email array*/
+/** @var $statement array*/
+
+
+include_once "../user/users_db.php";
+?>
+
     <section id="sect_main">
         <h1 id="main_header"> Dashboard [Admin] </h1>
 
-        <p class="main_text"> username: </p>
-        <p class="main_text"> email: </p>
+        <p class="main_text"> username: <?=$_SESSION['name']?> </p>
+        <p class="main_text"> email: <?=$_SESSION['email']?> </p>
 
     </section>
 
@@ -16,4 +26,4 @@
     </section>
 
     <hr id="admin_panel_sep">
-<?php include_once "../partial/footer.php";?>
+<?php $statement->close() ?>
