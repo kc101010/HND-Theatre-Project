@@ -10,9 +10,6 @@ body{
 #admin_panel_sep{
     color: white;
     display: block;
-    overflow: auto;
-    
-
 }
 
 #sect_main, #sect_admin_panel{
@@ -32,9 +29,9 @@ body{
     margin-left: 20%;
     margin-right: 20%;
 }
-
+/** Clickables **/
 .login_switch{text-align: center;}
-.login_switch:hover, #blog_cat_list li:hover{color:gray;}
+.login_switch:hover, #blog_cat_list li:hover, #admin_deac_user:hover{color:gray;}
 
 /** MOBILE BLOG **/
 #latest_article{display: none;}
@@ -51,7 +48,7 @@ body{
     margin-left: 20%;
 }
 
-.con_text, #blog_cat_list li, .login_switch{
+.con_text, #blog_cat_list li, .login_switch, #admin_deac_user{
     cursor: pointer;
 }
 

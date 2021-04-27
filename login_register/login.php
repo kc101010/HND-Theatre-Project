@@ -8,8 +8,8 @@
         <h2 id="login_header"> Login </h2>
 
         <form id="frm_login">
-            <input class="form_component" type="text" name="user_id" placeholder="Username/Email">
-            <input class="form_component" type="password" name="user_password" placeholder="Password">
+            <input class="form_component" type="text" name="user_id" placeholder="Username/Email" required>
+            <input class="form_component" type="password" name="user_password" placeholder="Password" required>
             <input id="frm_submit" class="form_component" type="submit" value="Log in">
         </form>
 
@@ -21,10 +21,10 @@
         <h2 id="login_header"> Register </h2>
 
         <form id="frm_regi">
-            <input class="form_component" type="text" name="username" placeholder="Username">
+            <input class="form_component" type="text" name="username" placeholder="Username" required>
             <input class="form_component" type="email" name="user_email" placeholder="Email">
-            <input class="form_component" type="password" name="user_password" placeholder="Password">
-            <input class="form_component" type="password" name="user_conf_password" placeholder="Confirm Password">
+            <input class="form_component" type="password" name="user_password" placeholder="Password" required>
+            <input class="form_component" type="password" name="user_conf_password" placeholder="Confirm Password" required>
             <input id="frm_submit" class="form_component" type="submit" value="Register">
         </form>
 

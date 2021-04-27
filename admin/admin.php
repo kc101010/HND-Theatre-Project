@@ -6,11 +6,14 @@
         <p class="main_text"> email: </p>
 
     </section>
+
     <hr id="admin_panel_sep">
+
     <section id="sect_admin_panel">
         <h1 id="main_header"> Manage Users </h1>
 
-        <p class="main_text"> De-activate user</p>
+        <p id="admin_deac_user" class="main_text"> De-activate user</p>
     </section>
 
+    <hr id="admin_panel_sep">
 <?php include_once "../partial/footer.php";?>
