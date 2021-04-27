@@ -7,7 +7,15 @@ body{
     font-family: 'Monda', sans-serif;
 }
 
-#sect_main{
+#admin_panel_sep{
+    color: white;
+    display: block;
+    overflow: auto;
+    
+
+}
+
+#sect_main, #sect_admin_panel{
     align-content: center;
     width: 100%;
     display: flex;
@@ -60,7 +68,7 @@ body{
 
 @media screen and (min-width: 800px ){
     /** ~ Page Main Content ~ **/
-    #main_header{
+    #main_header, #admin_panel_hdr{
         margin-left:1%;
         display: flex;
         justify-content:flex-end;
@@ -68,7 +76,7 @@ body{
         margin-right: 50%;
     }
 
-    #sect_main{
+    #sect_main, #sect_admin_panel{
         margin-top:3%;
         margin-bottom:3%;
     }
@@ -188,5 +196,11 @@ body{
     }
 
     /** ~ End Blog rules ~ **/
+
+    /** ~ User Dashboard Rules ~ **/
+    /** ~ End User Dashboard Rules ~ **/
+
+    /** ~ Admin-specific dashboard rules ~ **/
+    /** ~ End Admin rules ~ **/
 }
 
