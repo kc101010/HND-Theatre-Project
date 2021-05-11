@@ -48,7 +48,7 @@ body{
     margin-left: 20%;
 }
 
-.con_text, #blog_cat_list li, .login_switch, #admin_deac_user{
+.con_text, #blog_cat_list li, .login_switch, #admin_deac_user, .article_container, #latest_article{
     cursor: pointer;
 }
 

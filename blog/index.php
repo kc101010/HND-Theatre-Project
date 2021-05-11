@@ -18,7 +18,7 @@
         </div>
 
 
-        <div id="latest_article">
+        <div title="Click the image to view the article!" id="latest_article">
             <img id="latest_art_img" src="https://via.placeholder.com/200x200">
             <h2> Latest Article</h2>
             <p> A small replacement placeholder description</p>
