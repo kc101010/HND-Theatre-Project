@@ -14,11 +14,12 @@ include_once "../user/users_db.php";
         <p class="main_text"> username: <?=$_SESSION['name']?> </p>
         <p class="main_text"> email: <?=$_SESSION['mail']?> </p>
 
+        <form action="../login_register/logout.php" id="frm_logout">
+            <input id="frm_submit" class="form_component" type="submit" value="logout">
+        </form>
     </section>
 
-    <form action="../login_register/logout.php" id="frm_logout">
-        <input id="frm_submit" class="form_component" type="submit" value="logout">
-    </form>
+
 
     <hr id="admin_panel_sep">
 

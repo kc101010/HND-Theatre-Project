@@ -48,7 +48,7 @@ body{
     margin-left: 20%;
 }
 
-.con_text, #blog_cat_list li, .login_switch, #admin_deac_user, .article_container, #latest_article{
+.con_text, #blog_cat_list li, .login_switch, #admin_deac_user, .article_container, #latest_article, #frm_submit{
     cursor: pointer;
 }
 
@@ -195,6 +195,9 @@ body{
     /** ~ End Blog rules ~ **/
 
     /** ~ User Dashboard Rules ~ **/
+    /**#frm_logout{
+        margin-left: 26%;
+    }
     /** ~ End User Dashboard Rules ~ **/
 
     /** ~ Admin-specific dashboard rules ~ **/
