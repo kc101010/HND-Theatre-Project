@@ -5,7 +5,7 @@
 /** @var $pass array */
 /** @var $database array */
 
-include_once "../partial/header.php";
+//include_once "../partial/header.php";
 require_once "../connection/conn.php";
 
 $conn = mysqli_connect($host, $usern, $pass, $database);

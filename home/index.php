@@ -1,4 +1,17 @@
-<?php include_once "../partial/header.php";?>
+<?php
+
+/** @var $id array */
+/** @var $usern array*/
+/** @var $statement array*/
+
+include_once "../user/users_db.php";
+
+if ($_SESSION['id']) {
+    include_once "../partial/hdr_login.php";
+}else{
+    include_once "../partial/header.php";
+}
+?>
 
 
 
