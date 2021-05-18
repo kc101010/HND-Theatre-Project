@@ -7,10 +7,7 @@
 
 include_once "../user/users_db.php";
 
-
-
 ?>
-
 
 <!doctype html>
 <html lang="en">

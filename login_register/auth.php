@@ -13,7 +13,7 @@ $connection = mysqli_connect($host, $usern, $pass, $database);
 
 if (!isset($_POST['username'], $_POST['password'])){ exit('Please fill both username & password field!');}
 
-if($statement = $connection->prepare('SELECT id, password, is_admin, email FROM TheatreCompanyProject.user WHERE username = ?')){
+if($statement = $connection->prepare('SELECT id, password, is_admin, email, is_active FROM TheatreCompanyProject.user WHERE username = ?')){
 
     $statement->bind_param('s', $_POST['username']);
     $statement->execute();
@@ -21,27 +21,32 @@ if($statement = $connection->prepare('SELECT id, password, is_admin, email FROM 
     $statement->store_result();
 
     if($statement->num_rows > 0){
-        $statement->bind_result($id, $password, $admin, $email);
+        $statement->bind_result($id, $password, $admin, $email, $active);
         $statement->fetch();
 
-        if(password_verify($_POST['password'], $password)){
-            session_regenerate_id();
+        if($active) {
 
-            $_SESSION['loggedin'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
-            $_SESSION['id'] = $id;
-            $_SESSION['is_admin'] = $admin;
-            $_SESSION['mail'] = $email;
+            if (password_verify($_POST['password'], $password)) {
+                session_regenerate_id();
 
-            if($admin == 1){
-                header('Location: ../admin/admin.php');
-            }else{
-                header('Location: ../user/user.php');
+                $_SESSION['loggedin'] = TRUE;
+                $_SESSION['name'] = $_POST['username'];
+                $_SESSION['id'] = $id;
+                $_SESSION['is_admin'] = $admin;
+                $_SESSION['mail'] = $email;
+
+                if ($admin == 1) {
+                    header('Location: ../admin/admin.php');
+                } else {
+                    header('Location: ../user/user.php');
+                }
+
+
+            } else {
+                echo 'Incorrect Password!';
             }
-
-
         }else{
-            echo 'Incorrect Password!';
+            echo 'This account is not activated';
         }
 
     }else{
