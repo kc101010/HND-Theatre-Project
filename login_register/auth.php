@@ -13,9 +13,9 @@ $connection = mysqli_connect($host, $usern, $pass, $database);
 
 if (!isset($_POST['username'], $_POST['password'])){ exit('Please fill both username & password field!');}
 
-if($statement = $connection->prepare('SELECT id, password, is_admin, email, is_active FROM TheatreCompanyProject.user WHERE username = ?')){
+if($statement = $connection->prepare('SELECT id, password, is_admin, email, is_active FROM TheatreCompanyProject.user WHERE (username = ?) OR (email = ?)')){
 
-    $statement->bind_param('s', $_POST['username']);
+    $statement->bind_param('ss', $_POST['username'], $_POST['username']);
     $statement->execute();
 
     $statement->store_result();
@@ -50,7 +50,7 @@ if($statement = $connection->prepare('SELECT id, password, is_admin, email, is_a
         }
 
     }else{
-        echo 'Incorrect Username!';
+        echo 'Incorrect Username/Email!';
     }
 
 }else{
