@@ -14,21 +14,21 @@ require_once "../connection/conn.php";
 
 $conn = mysqli_connect($host, $usern, $pass, $database);
 $statement = $conn->prepare('SELECT 
-       m_title,
-       genre,
-       m_img_path,
-       rating
+    m.id,
+    m.m_title,
+    m.genre,
+    m.m_img_path,
+    r.rating
 
         
-       FROM TheatreCompanyProject.movie, TheatreCompanyProject.review 
+    FROM TheatreCompanyProject.movie m, TheatreCompanyProject.review r
         
-
       
        ');
 
 $statement->execute();
 $statement->store_result();
-$statement->bind_result( $title,$genre, $movieImg, $rating);
+$statement->bind_result( $id,$title,$genre, $movieImg, $rating);
 $statement->fetch();
 
 

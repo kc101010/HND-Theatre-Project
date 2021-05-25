@@ -54,21 +54,7 @@ include_once "review.php";
             <p class="article_desc"> <?= $rating ?> </p>
         </div>
         <?php endwhile; ?>
-    <!--
-        <div title="Click the image to view the article!" class="article_container">
-            <img class="article_img" src="https://via.placeholder.com/200x200"/>
-            <p class="article_title"> Title </p>
-            <p class="article_type"> Type </p>
-            <p class="article_desc"> Description </p>
-        </div>
 
-        <div title="Click the image to view the article!" class="article_container">
-            <img class="article_img" src="https://via.placeholder.com/200x200"/>
-            <p class="article_title"> Title </p>
-            <p class="article_type"> Type </p>
-            <p class="article_desc"> Description </p>
-        </div>
-    -->
     </section>
 
 <?php include_once "../partial/footer.php";?>
