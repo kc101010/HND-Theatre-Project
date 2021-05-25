@@ -24,9 +24,13 @@ include_once "../user/users_db.php";
     <hr id="admin_panel_sep">
 
     <section id="sect_admin_panel">
-        <h1 id="main_header"> Manage Users </h1>
+        <h1 id="main_header"> Tools </h1>
 
-        <p id="admin_deac_user" class="main_text"> De-activate user</p>
+        <p id="admin_deac_user" class="main_text"> Manage user</p>
+        <p id="admin_deac_user" class="main_text"> Add new article</p>
+        <p id="admin_deac_user" class="main_text"> Edit Article</p>
+        <p id="admin_deac_user" class="main_text"> Delete Article</p>
+
     </section>
 
     <hr id="admin_panel_sep">
