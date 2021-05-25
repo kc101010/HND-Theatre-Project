@@ -1,5 +1,5 @@
 <?php
-
+/** @var $statement array*/
 /** @var $host array */
 /** @var $usern array */
 /** @var $pass array */

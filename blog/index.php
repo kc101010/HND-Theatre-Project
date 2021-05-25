@@ -1,8 +1,11 @@
 <?php
 
 /** @var $id array */
-/** @var $usern array*/
+/** @var $usern array */
 /** @var $statement array*/
+
+
+
 
 include_once "../user/users_db.php";
 
@@ -11,6 +14,9 @@ if ($_SESSION['id']) {
 }else{
     include_once "../partial/header.php";
 }
+$statement->close();
+
+include_once "review.php";
 ?>
 
     <section id="sect_main">
@@ -38,7 +44,17 @@ if ($_SESSION['id']) {
         </div>
     </section>
 
+
     <section id="sect_articles">
+        <?php while($statement->fetch()): ?>
+        <div title="Click the image to view the article!" class="article_container">
+            <img class="article_img" height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
+            <p class="article_title"> <?= $title ?> </p>
+            <p class="article_type"> <?= $genre ?> </p>
+            <p class="article_desc"> <?= $rating ?> </p>
+        </div>
+        <?php endwhile; ?>
+    <!--
         <div title="Click the image to view the article!" class="article_container">
             <img class="article_img" src="https://via.placeholder.com/200x200"/>
             <p class="article_title"> Title </p>
@@ -52,14 +68,7 @@ if ($_SESSION['id']) {
             <p class="article_type"> Type </p>
             <p class="article_desc"> Description </p>
         </div>
-
-        <div title="Click the image to view the article!" class="article_container">
-            <img class="article_img" src="https://via.placeholder.com/200x200"/>
-            <p class="article_title"> Title </p>
-            <p class="article_type"> Type </p>
-            <p class="article_desc"> Description </p>
-        </div>
-
+    -->
     </section>
 
 <?php include_once "../partial/footer.php";?>

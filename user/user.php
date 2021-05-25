@@ -18,6 +18,10 @@
         <input id="frm_submit" class="form_component" type="submit" value="logout">
     </form>
 
+    <form action="" id="frm_logout">
+        <input id="frm_submit" class="form_component" type="submit" value="change password">
+    </form>
+
 </section>
 
 <?php $statement->close() ?>

@@ -176,21 +176,27 @@ body{
     .article_container{
         margin-left: 5%;
         margin-right: 20%;
-        width: 7%;
+        width: 5%;
         float: left;
         margin-bottom: 10%;
-
-    }
-
-    .article_title, .article_type{
-        margin-left: 80%;
-
-    }
-
-    .article_desc{
-        margin-left: 55%;
+        display: block;
         text-align: center;
+
     }
+
+    .article_img{
+
+    }
+
+    .article_title {
+        display: block;
+        white-space: nowrap;
+
+    }
+
+
+
+
 
     /** ~ End Blog rules ~ **/
 
