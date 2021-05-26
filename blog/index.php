@@ -52,6 +52,7 @@ include_once "review.php";
             <p class="article_title"> <?= $title ?> </p>
             <p class="article_type"> <?= $genre ?> </p>
             <p class="article_desc"> <?= $rating ?> </p>
+            <p class="article_user"> <?= $username ?> </p>
         </div>
         <?php endwhile; ?>
 

@@ -13,22 +13,26 @@
 require_once "../connection/conn.php";
 
 $conn = mysqli_connect($host, $usern, $pass, $database);
-$statement = $conn->prepare('SELECT 
-    m.id,
-    m.m_title,
+$statement = $conn->prepare('SELECT
+    m_title,
     m.genre,
+    m.release_date,
     m.m_img_path,
-    r.rating
-
-        
-    FROM TheatreCompanyProject.movie m, TheatreCompanyProject.review r
-        
-      
-       ');
+    r.review,
+    r.rating,
+    u.username,
+    r.fk_movie_id,
+    r.fk_user_id
+    FROM TheatreCompanyProject.movie m
+    left join review r on m.id = r.fk_movie_id
+    left join user u on u.id = r.fk_user_id
+    where u.is_active = 1
+    order by r.id DESC
+   ');
 
 $statement->execute();
 $statement->store_result();
-$statement->bind_result( $id,$title,$genre, $movieImg, $rating);
+$statement->bind_result( $title,$genre, $releaseDate, $movieImg, $review, $rating, $username, $fkMovie, $fkUser);
 $statement->fetch();
 
 
