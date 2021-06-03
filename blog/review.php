@@ -14,6 +14,7 @@ require_once "../connection/conn.php";
 
 $conn = mysqli_connect($host, $usern, $pass, $database);
 $statement = $conn->prepare('SELECT
+    m.id,
     m_title,
     m.genre,
     m.release_date,
@@ -32,7 +33,7 @@ $statement = $conn->prepare('SELECT
 
 $statement->execute();
 $statement->store_result();
-$statement->bind_result( $title,$genre, $releaseDate, $movieImg, $review, $rating, $username, $fkMovie, $fkUser);
+$statement->bind_result( $m_id,$m_title,$m_genre, $m_releaseDate, $m_movieImg, $m_review, $m_rating, $m_username, $fkMovie, $fkUser);
 $statement->fetch();
 
 

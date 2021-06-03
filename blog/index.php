@@ -4,9 +4,6 @@
 /** @var $usern array */
 /** @var $statement array*/
 
-
-
-
 include_once "../user/users_db.php";
 
 if ($_SESSION['id']) {
@@ -48,11 +45,14 @@ include_once "review.php";
     <section id="sect_articles">
         <?php while($statement->fetch()): ?>
         <div title="Click the image to view the article!" class="article_container">
-            <img class="article_img" height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
-            <p class="article_title"> <?= $title ?> </p>
-            <p class="article_type"> <?= $genre ?> </p>
-            <p class="article_desc"> <?= $rating ?> </p>
-            <p class="article_user"> <?= $username ?> </p>
+            <a href="article.php?mov_id=<?=$m_id?>">
+                <img class="article_img"   height=500 width=300 src="../images/movie/<?= $m_movieImg ?>"/>
+            </a>
+
+            <p class="article_title"> <?= $m_title ?> </p>
+            <p class="article_type"> <?= $m_genre ?> </p>
+            <p class="article_desc"> <?= $m_rating ?> </p>
+            <p class="article_user"> <?= $m_username ?> </p>
         </div>
         <?php endwhile; ?>
 
