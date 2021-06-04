@@ -1,12 +1,10 @@
 <?php
-
     /** @var $id array */
     /** @var $usern array*/
     /** @var $statement array*/
 
-    include_once "../partial/hdr_login.php";
     include_once "../user/users_db.php";
-    if($_SESSION['is_admin']){include_once "../admin/admin.php";}
+    include_once "../partial/hdr_login.php";
 ?>
 
 <section id="sect_main">
@@ -25,7 +23,7 @@
 
 </section>
 
-<?php $statement->close() ?>
+<?php $statement->close(); ?>
 
 
 
