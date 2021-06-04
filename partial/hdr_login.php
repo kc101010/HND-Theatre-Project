@@ -7,6 +7,9 @@
 
 include_once "../user/users_db.php";
 
+if($_SESSION['is_admin']){$url = "../admin/admin.php";}
+else{$url = "../user/user.php";}
+
 ?>
 
 <!doctype html>
@@ -45,7 +48,7 @@ include_once "../user/users_db.php";
 
         <nav id="hdr-nav">
             <ul>
-                <li class="hdr-nav-lnk"> <a href="../user/user.php"> Logged in: <?=$_SESSION['name']?> </a> </li>
+                <li class="hdr-nav-lnk"> <a href="<?=$url?>"> Logged in: <?=$_SESSION['name']?> </a> </li>
                 <li class="hdr-nav-lnk"> <a href="../blog/index.php"> Blog </a>  </li>
                 <li class="hdr-nav-lnk"> <a href="../contact/index.php"> Contact </a> </li>
 
