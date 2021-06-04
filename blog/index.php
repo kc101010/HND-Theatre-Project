@@ -6,11 +6,11 @@
 
 include_once "../user/users_db.php";
 
-if ($_SESSION['id']) {
-    include_once "../partial/hdr_login.php";
-}else{
-    include_once "../partial/header.php";
-}
+
+//if ($_SESSION['is_admin']) {include_once "../admin/admin.php";}
+if($_SESSION['id']){include_once "../partial/hdr_login.php";}
+else{include_once "../partial/header.php";}
+
 $statement->close();
 
 include_once "review.php";

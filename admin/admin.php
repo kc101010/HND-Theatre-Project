@@ -31,10 +31,11 @@ include_once "../user/users_db.php";
     <section id="sect_admin_panel">
         <h1 id="main_header"> Tools </h1>
 
-        <p id="admin_deac_user" class="main_text"> Manage user</p>
-        <p id="admin_deac_user" class="main_text"> Add new article</p>
+        <p id="admin_deac_user" class="main_text"> <a href="manageUser.php"> Manage User </a> </p>
+        <p id="admin_deac_user" class="main_text"> <a href="manageArticle.php"> Manage Article </a> </p>
+        <!--
         <p id="admin_deac_user" class="main_text"> Edit Article</p>
-        <p id="admin_deac_user" class="main_text"> Delete Article</p>
+        <p id="admin_deac_user" class="main_text"> Delete Article</p>-->
 
     </section>
 

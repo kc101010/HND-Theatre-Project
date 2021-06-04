@@ -6,6 +6,7 @@
 
     include_once "../partial/hdr_login.php";
     include_once "../user/users_db.php";
+    if($_SESSION['is_admin']){include_once "../admin/admin.php";}
 ?>
 
 <section id="sect_main">
