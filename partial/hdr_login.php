@@ -23,7 +23,6 @@ else{$url = "../user/user.php";}
     <link rel="stylesheet" href="../css/nav.css" type="text/css"/>
     <link rel="stylesheet" href="../css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/mobile.css" type="text/css"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap" rel="stylesheet">
