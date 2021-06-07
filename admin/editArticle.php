@@ -64,7 +64,7 @@ $statement->fetch();
         <p class="main_text"> <?=$review ?> </p>
 
         <form method="post" id="frm_mngblog">
-            <input id="frm_submit" formaction="edit.php" type="submit" value="EDIT">
+            <input id="frm_submit" formaction="edit.php?rid=<?=$rid?>" type="submit" value="EDIT">
             <input id="frm_submit" formaction="delete.php?rid=<?=$rid?>&uid=<?=$uid?>" type="submit" value="DELETE">
         </form>
 
