@@ -1,9 +1,10 @@
 <?php
+
+//WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development
+
 /** @var $id array */
 /** @var $usern array */
 /** @var $statement array*/
-
-
 
 include_once "../user/users_db.php";
 

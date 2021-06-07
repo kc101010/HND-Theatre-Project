@@ -1,9 +1,11 @@
 <?php
+
+//WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development
+
+
 /** @var $id array */
 /** @var $usern array */
 /** @var $statement array*/
-
-
 
 include_once "../user/users_db.php";
 
@@ -31,9 +33,11 @@ $statement = $conn->prepare('SELECT
     m.genre,
     m.release_date,
     m.m_img_path,
+    r.id,
     r.review,
     r.rating,
     u.username,
+    u.id,
     r.fk_movie_id,
     r.fk_user_id
 FROM TheatreCompanyProject.movie m
@@ -44,7 +48,7 @@ where m.id = '.$mid.' and r.fk_movie_id = '.$mid.' ');
 
 $statement->execute();
 $statement->store_result();
-$statement->bind_result( $title,$genre, $release, $movieImg, $review, $rating, $username, $fk_movie, $fk_user);
+$statement->bind_result( $title,$genre, $release, $movieImg, $rid, $review, $rating, $username, $uid, $fk_movie, $fk_user);
 $statement->fetch();
 
 ?>
@@ -58,6 +62,11 @@ $statement->fetch();
         <p> <?=$rating ?> </p>
         <p> <?=$username ?> </p>
         <p class="main_text"> <?=$review ?> </p>
+
+        <form method="post" id="frm_mngblog">
+            <input id="frm_submit" formaction="edit.php" type="submit" value="EDIT">
+            <input id="frm_submit" formaction="delete.php?rid=<?=$rid?>&uid=<?=$uid?>" type="submit" value="DELETE">
+        </form>
 
 
     </section>
