@@ -1,4 +1,8 @@
-<?php include_once "../partial/header.php";?>
+<?php
+//WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development
+include_once "../partial/header.php";
+
+?>
 <script language="JavaScript" type="text/javascript" src="../js/login.js"></script>
 
 <section id="sect_main">

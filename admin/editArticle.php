@@ -59,13 +59,20 @@ $statement->fetch();
         <img class="article_img"   height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
         <p> <?=$release ?> </p>
         <p> <?=$genre ?> </p>
-        <p> <?=$rating ?> </p>
         <p> <?=$username ?> </p>
+
+        <p> <?=$rating ?> </p>
         <p class="main_text"> <?=$review ?> </p>
 
+        <h3 class="form_component">Edit Review</h3>
         <form method="post" id="frm_mngblog">
-            <input id="frm_submit" formaction="edit.php?rid=<?=$rid?>" type="submit" value="EDIT">
-            <input id="frm_submit" formaction="delete.php?rid=<?=$rid?>&uid=<?=$uid?>" type="submit" value="DELETE">
+            <input class="form_component" type="text" name="rating" value="<?=$rating?>" id="edt_rating">
+
+
+            <textarea class="form_component" rows="15" cols="50" name="review" id="edt_review"><?=$review?></textarea>
+
+            <input class="form_component" id="frm_submit" formaction="edit.php?rid=<?=$rid?>" type="submit" value="EDIT">
+            <input class="form_component" id="frm_submit" formaction="delete.php?rid=<?=$rid?>&uid=<?=$uid?>" type="submit" value="DELETE">
         </form>
 
 
