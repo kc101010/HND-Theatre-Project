@@ -55,6 +55,8 @@ $statement->fetch();
 
     <section id="sect_main">
 
+        <h1 id="main_header">Edit Article</h1>
+
         <h1> <?= $title ?>  </h1>
         <img class="article_img"   height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
         <p> <?=$release ?> </p>

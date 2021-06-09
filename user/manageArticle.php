@@ -12,6 +12,7 @@ include_once "../partial/hdr_login.php";
 include_once "../user/users_db.php";
 require_once '../connection/conn.php';
 if(!isset($_SESSION['id'])){header("Location: ../login_register/login.php");}
+$user = $_SESSION['id'];
 $statement->close();
 
 /** @var $host array */
@@ -25,25 +26,27 @@ $statement->close();
 
 $conn = mysqli_connect($host, $usern, $pass, $database);
 
-$statement = $conn->prepare('SELECT 
-       m_title,
-       m.id,
-       m.genre,
-       m.release_date,
-       m.m_img_path,
-        r.review,
-       r.rating,
-       u.id,
-       u.username,
-       r.id,
-       r.fk_movie_id,
-       r.fk_user_id
-       FROM TheatreCompanyProject.movie m
+$statement = $conn->prepare('SELECT
+    m_title,
+    m.id,
+    m.genre,
+    m.release_date,
+    m.m_img_path,
+    r.review,
+    r.rating,
+    u.id,
+    u.username,
+    r.id,
+    r.fk_movie_id,
+    r.fk_user_id
+FROM TheatreCompanyProject.movie m
 
-        left join review r on m.id = r.fk_movie_id
-        left join user u on u.id = r.fk_user_id
-        where u.is_active = 1
-        order by r.id desc ');
+         left join review r on m.id = r.fk_movie_id
+         left join user u on u.id = r.fk_user_id
+
+where u.id = '.$user.' and u.is_active = 1 
+order by r.id desc');
+
 
 $statement->execute();
 $statement->store_result();

@@ -21,6 +21,17 @@
         <input id="frm_submit" class="form_component" type="submit" value="change password">
     </form>
 
+
+</section>
+
+<hr id="admin_panel_sep">
+
+<section id="sect_admin_panel">
+    <h1 id="main_header"> Tools </h1>
+
+    <p id="usr_mng_art" class="main_text"> <a href="manageArticle.php"> Manage Article </a> </p>
+    <p id="usr_new_art" class="main_text"> <a href="newArticle.php"> New Article </a> </p>
+
 </section>
 
 <?php $statement->close(); ?>

@@ -32,10 +32,8 @@ include_once "../user/users_db.php";
         <h1 id="main_header"> Tools </h1>
 
         <p id="admin_deac_user" class="main_text"> <a href="manageUser.php"> Manage User </a> </p>
-        <p id="admin_deac_user" class="main_text"> <a href="manageArticle.php"> Manage Article </a> </p>
-        <!--
-        <p id="admin_deac_user" class="main_text"> Edit Article</p>
-        <p id="admin_deac_user" class="main_text"> Delete Article</p>-->
+        <p id="admin_mng_art" class="main_text"> <a href="manageArticle.php"> Manage Article </a> </p>
+        <p id="admin_new_art" class="main_text"> <a href="newArticle.php"> New Article </a> </p>
 
     </section>
 
