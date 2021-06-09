@@ -1,5 +1,8 @@
 <?php
 
+//WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development
+
+
 /** @var $host array */
 /** @var $usern array */
 /** @var $pass array */
@@ -10,9 +13,13 @@
 /** @var $fk_movie array*/
 /** @var $movieImg array*/
 
+//call our database connection
 require_once "../connection/conn.php";
 
+//connect to our database using connection details
 $conn = mysqli_connect($host, $usern, $pass, $database);
+
+//prepare a statment for our database to execute
 $statement = $conn->prepare('SELECT
     m.id,
     m_title,
@@ -30,10 +37,18 @@ $statement = $conn->prepare('SELECT
     where u.is_active = 1
     order by r.id DESC
    ');
+//SQL statement gathers information on movie, review and user used to display reviews on blog page
 
+//have the database execute the query
 $statement->execute();
+
+//store the query results
 $statement->store_result();
+
+//declare variables to hold the results from the query
 $statement->bind_result( $m_id,$m_title,$m_genre, $m_releaseDate, $m_movieImg, $m_review, $m_rating, $m_username, $fkMovie, $fkUser);
+
+//essentially make our variables available to the program
 $statement->fetch();
 
 

@@ -49,18 +49,21 @@ $statement->bind_result( $title,$genre, $release, $movieImg, $review, $rating, $
 $statement->fetch();
 
 ?>
-
+    <!-- Main section of page -->
     <section id="sect_main">
 
+        <!-- Header used to display title -->
+        <!-- info is provided through paragraphs -->
         <h1> <?= $title ?>  </h1>
         <img class="article_img"   height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
         <p> <?=$release ?> </p>
         <p> <?=$genre ?> </p>
         <p> <?=$rating ?> </p>
         <p> <?=$username ?> </p>
+        <!-- This para required main_text for better styling -->
         <p class="main_text"> <?=$review ?> </p>
 
 
     </section>
-
+    <!-- call page footer -->
 <?php include_once "../partial/footer.php";?>
