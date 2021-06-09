@@ -12,6 +12,15 @@ The Theatre Project is my Main project for 'Developing Websites for Multiplatfor
 - Vagrant
 
 
+### RESOURCES USED
+	
+- https://placeholder.com/
+- https://fontawessome.com/
+- https://unsplash.com/
+- https://pixabay.com/
+- https://betterplaceholder.com/ 
+
+
 ### CONTACT #################################################################################################################################################################################################################################
 
 If you have any issues or questions, please contact me at the following;
