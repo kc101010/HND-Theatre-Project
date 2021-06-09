@@ -1,3 +1,6 @@
+/*WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development*/
+
+/* The footer container */
 #mn-footer{
     text-align: center;
     color:white;
@@ -7,11 +10,13 @@
     margin-top: 10%;
 }
 
+/* footer links*/
 .ftr-lnk{
     display:inline-block;
     margin-left:2%;
 }
 
+/* Refers to link anchors, styling for footer links*/
 a{color:white;}
 a:hover{color:gray;}
 

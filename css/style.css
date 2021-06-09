@@ -1,3 +1,7 @@
+/*WRITTEN BY KYLE CHRISTIE, GLASGOW CLYDE COLLEGE (2021) -- DEVELOPING WEBSITES FOR MULTIPLATFORM USE ~ HND Software Development*/
+/*This CSS sheet is written for mobile first with media queries used for devices larger than mobile*/
+
+/*Page body - near enough everything*/
 body{
     background-image:url("../images/theatre-blur2.jpg");
     background-repeat:no-repeat;
@@ -7,11 +11,13 @@ body{
     font-family: 'Monda', sans-serif;
 }
 
+/*Horizontal rules used as profile separators*/
 #admin_panel_sep{
     color: white;
     display: block;
 }
 
+/*Main page section and admin panel*/
 #sect_main, #sect_admin_panel{
     align-content: center;
     width: 100%;
@@ -62,7 +68,9 @@ body{
     text-align: center;
     align-content: center;
 }
+/** END MOBILE BLOG **/
 
+/** Non-mobile/responsive styling **/
 @media screen and (min-width: 800px ){
     /** ~ Page Main Content ~ **/
     #main_header, #admin_panel_hdr{
@@ -193,10 +201,6 @@ body{
         white-space: nowrap;
 
     }
-
-
-
-
 
     /** ~ End Blog rules ~ **/
 
