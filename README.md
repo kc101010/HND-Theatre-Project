@@ -15,7 +15,7 @@ The Theatre Project is my Main project for 'Developing Websites for Multiplatfor
 ### RESOURCES USED
 	
 - https://placeholder.com/
-- https://fontawessome.com/
+- https://fontawesome.com/
 - https://unsplash.com/
 - https://pixabay.com/
 - https://betterplaceholder.com/ 

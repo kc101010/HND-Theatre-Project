@@ -48,6 +48,9 @@ if($statement = $connection->prepare('SELECT id, password, is_admin, email, is_a
                 $_SESSION['is_admin'] = $admin; //whether the current user account is an admin is stored
                 $_SESSION['mail'] = $email;//user email is stored
 
+                //set cookie username to store variable username for 24 hours
+                setcookie("username", $_POST['username'], time() + 86400, "/");
+
                 if ($admin == 1) { //if the user is an admin, redirect to the admin profile page
                     header('Location: ../admin/admin.php');
                 } else {    //if the user is not an admin redirect to the user profile page

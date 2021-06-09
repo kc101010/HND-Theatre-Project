@@ -31,6 +31,17 @@
 
 }
 
+#backButton{
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+}
+
+#backButton:hover{
+    color:gray;
+}
+
 /** The NAV tag and its contents **/
 #hdr-nav{
     margin-left: 10%;

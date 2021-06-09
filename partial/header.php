@@ -54,6 +54,8 @@
                         - main blog
                         - contact page
                 -->
+                <!-- Icon used for back button, handled through javascript DOM -->
+                <i id="backButton" onclick="history.back(-1);" class="fas fa-arrow-alt-circle-left"></i>
                 <li class="hdr-nav-lnk"> <a href="../login_register/login.php"> Login/Register </a> </li>
                 <li class="hdr-nav-lnk"> <a href="../blog/index.php"> Blog </a>  </li>
                 <li class="hdr-nav-lnk"> <a href="../contact/index.php"> Contact </a> </li>

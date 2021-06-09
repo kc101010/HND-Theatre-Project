@@ -26,7 +26,12 @@ include_once "../partial/header.php";
                  uses auth.php to permit logging in/handle incorrect information
              -->
             <form action="auth.php" method="post" id="frm_login">
-                <input class="form_component" type="text" name="username" placeholder="Username/Email" id="username" required>
+                <input class="form_component" type="text" name="username" placeholder="Username/Email" id="username" required
+                       value="<?php
+                       //check if the cookie is set, display the username if it is. Display nothing if its not.
+                       if(isset($_COOKIE['username'])){echo $_COOKIE['username'];}else{echo"";}
+                       ?>">
+
                 <input class="form_component" type="password" name="password" placeholder="Password" id="password" required>
                 <input id="frm_submit" class="form_component" type="submit" value="Log in">
             </form>
