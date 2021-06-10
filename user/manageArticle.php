@@ -87,13 +87,13 @@ $statement->fetch();
         <?php else: ?>
             <!-- Display Review information -->
             <!-- Section holds reviews to be displayed -->
-            <section id="sect_articles">
+            <section id="sect_articls">
                 <!-- PHP while statement to display reviews -->
             <?php while($statement->fetch()): ?>
                 <!-- Container holds actual Review information -->
                 <div class="article_container">
                     <!-- Link to review with full info -->
-                    <a href="editArticle.php?mov_id=<?=$id?>">
+                    <a href="editArticle.php?rid=<?=$rid?>">
                         <!-- Main image for review -->
                         <img class="article_img"   height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
                     </a>

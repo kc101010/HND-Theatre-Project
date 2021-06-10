@@ -37,7 +37,7 @@ require_once '../connection/conn.php';
 $conn = mysqli_connect($host, $usern, $pass, $database);
 
 //get movie id passed from previous form on manageArticle
-$mid = $_GET['mov_id'];
+$rid = $_GET['rid'];
 
 //prepare a statment for our database to execute
 $statement = $conn->prepare('SELECT
@@ -56,7 +56,7 @@ FROM TheatreCompanyProject.movie m
 
          left join review r on m.id = r.fk_movie_id
          left join user u on u.id = r.fk_user_id
-where m.id = '.$mid.' and r.fk_movie_id = '.$mid.'  ');
+where r.id = '.$rid.'  ');
 //this query selects most review information, makes sure that the movie id matches the movie id in the review
 
 //have the database execute the query
