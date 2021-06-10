@@ -30,7 +30,7 @@
     left: 20px;
 
 }
-
+/* Back button (takes user back once in their history)*/
 #backButton{
     font-size: 30px;
     display: inline-block;

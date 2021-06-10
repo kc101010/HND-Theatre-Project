@@ -65,7 +65,7 @@ $statement->store_result();
 $statement->bind_result( $title,$id,$genre, $release, $movieImg, $review, $rating, $uid, $username, $rid, $fk_movie, $fk_user);
 
 //essentially make our variables available to the program
-$statement->fetch();
+//$statement->fetch();
 ?>
     <!-- Main section of page -->
     <section id="sect_main">
@@ -88,7 +88,7 @@ $statement->fetch();
                 <!-- Container holds actual Review information -->
                 <div class="article_container">
                     <!-- Link to review with full info -->
-                    <a href="editArticle.php?mov_id=<?=$id?>">
+                    <a href="editArticle.php?rid=<?=$rid?>">
                         <!-- Main image for review -->
                         <img class="article_img"   height=500 width=300 src="../images/movie/<?= $movieImg ?>"/>
                     </a>

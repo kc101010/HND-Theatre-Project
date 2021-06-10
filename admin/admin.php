@@ -9,6 +9,7 @@ include_once "../partial/hdr_login.php";
 
 //call a query which allows the code to view the details of which user is logged on
 include_once "../user/users_db.php";
+
 ?>
     <!-- Main section of page -->
     <section id="sect_main">
@@ -19,14 +20,18 @@ include_once "../user/users_db.php";
         <p class="main_text"> username: <?=$_SESSION['name']?> </p>
         <p class="main_text"> email: <?=$_SESSION['mail']?> </p>
 
+
+        <!-- Form holds button to change account password -->
+        <form method="post" action="../user/changePassword.php" id="frm_chngpword">
+            <input class="form_component" type="password" name="password" placeholder="Password" required>
+            <input class="form_component" type="password" name="user_conf_password" placeholder="Confirm Password" required>
+            <input id="frm_submit" class="form_component" type="submit" value="change password">
+        </form>
+
+
         <!-- Form allows user to log out -->
         <form action="../login_register/logout.php" id="frm_logout">
             <input id="frm_submit" class="form_component" type="submit" value="logout">
-        </form>
-
-        <!-- Form allows user to change password -->
-        <form action="" id="frm_chngpword">
-            <input id="frm_submit" class="form_component" type="submit" value="change password">
         </form>
 
     </section>

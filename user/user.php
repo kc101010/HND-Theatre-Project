@@ -18,14 +18,16 @@
         <p class="main_text"> username: <?=$_SESSION['name']?> </p>
         <p class="main_text"> email: <?=$_SESSION['mail']?> </p>
 
+        <!-- Form holds button to change account password -->
+        <form method="post" action="changePassword.php" id="frm_chngpword">
+            <input class="form_component" type="password" name="password" placeholder="Password" required>
+            <input class="form_component" type="password" name="user_conf_password" placeholder="Confirm Password" required>
+            <input id="frm_submit" class="form_component" type="submit" value="change password">
+        </form>
+
         <!-- Form holds button which logs user out -->
         <form action="../login_register/logout.php" id="frm_logout">
             <input id="frm_submit" class="form_component" type="submit" value="logout">
-        </form>
-
-        <!-- Form holds button to change account password -->
-        <form action="" id="frm_logout">
-            <input id="frm_submit" class="form_component" type="submit" value="change password">
         </form>
 
 
