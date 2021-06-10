@@ -28,6 +28,17 @@ if ($_SESSION['id']) {
         <p class="con_text"> <a> Facebook </a> </p>
         <p class="con_text"> <a> Twitter </a> </p>
 
+        <div id="sect_login">
+            <h2 id="login_header"> Contact Form </h2>
+
+            <form method="post" action="contact.php" id="frm_login">
+                <input class="form_component" type="text" name="name" placeholder="Name" required>
+                <input class="form_component" type="email" name="email" placeholder="Email" required>
+                <textarea class="form_component" rows="15" cols="30" name="contact_txt" id="txt_contact"></textarea>
+                <input class="form_component" id="frm_submit"  type="submit" value="Submit">
+            </form>
+        </div>
+
     </section>
 
 <?php include_once "../partial/footer.php";?>
