@@ -68,7 +68,7 @@ $statement->store_result();
 $statement->bind_result( $title,$id,$genre, $release, $movieImg, $review, $rating, $uid, $username, $rid, $fk_movie, $fk_user);
 
 //essentially make our variables available to the program
-$statement->fetch();
+//$statement->fetch();
 ?>
 
     <!-- Main section of page -->
