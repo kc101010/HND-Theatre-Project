@@ -29,7 +29,7 @@ if ($_SESSION['id']) {
         <p class="con_text"> <a> Twitter </a> </p>
 
         <div id="sect_login">
-            <h2 id="login_header"> Contact Form </h2>
+            <h2 id="login_header"> Let Us Know! </h2>
 
             <form method="post" action="contact.php" id="frm_login">
                 <input class="form_component" type="text" name="name" placeholder="Name" required>
