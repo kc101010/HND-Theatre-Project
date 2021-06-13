@@ -26,7 +26,7 @@ $statement->close();
 
 require_once '../connection/conn.php';
 $conn = mysqli_connect($host, $usern, $pass, $database);
-$mid = $_GET['mov_id'];
+$rid = $_GET['rid'];
 $statement = $conn->prepare('SELECT
     m.m_title,
     m.genre,
@@ -41,7 +41,7 @@ FROM TheatreCompanyProject.movie m
 
          left join review r on m.id = r.fk_movie_id
          left join user u on u.id = r.fk_user_id
-where m.id = '.$mid.' and r.fk_movie_id = '.$mid.' and u.is_active = 1 ');
+where r.id = '.$rid.' and u.is_active = 1 ');
 
 $statement->execute();
 $statement->store_result();

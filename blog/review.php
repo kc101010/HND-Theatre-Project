@@ -26,6 +26,7 @@ $statement = $conn->prepare('SELECT
     m.genre,
     m.release_date,
     m.m_img_path,
+    r.id,
     r.review,
     r.rating,
     u.username,
@@ -35,7 +36,7 @@ $statement = $conn->prepare('SELECT
     left join review r on m.id = r.fk_movie_id
     left join user u on u.id = r.fk_user_id
     where u.is_active = 1
-    order by r.id DESC
+    order by r.id desc 
    ');
 //SQL statement gathers information on movie, review and user used to display reviews on blog page
 
@@ -46,10 +47,10 @@ $statement->execute();
 $statement->store_result();
 
 //declare variables to hold the results from the query
-$statement->bind_result( $m_id,$m_title,$m_genre, $m_releaseDate, $m_movieImg, $m_review, $m_rating, $m_username, $fkMovie, $fkUser);
+$statement->bind_result( $m_id,$m_title,$m_genre, $m_releaseDate, $m_movieImg, $rid, $m_review, $m_rating, $m_username, $fkMovie, $fkUser);
 
 //essentially make our variables available to the program
-$statement->fetch();
+//$statement->fetch();
 
 
 

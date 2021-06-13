@@ -17,7 +17,7 @@ $statement->close();
 
 /*separated statement for displaying reviews into a separate file
   for cleaner code and to prevent clashes with other SQL statements*/
-include_once "review.php";
+include "review.php";
 ?>
     <!-- Main section of page -->
     <section id="sect_main">
@@ -56,7 +56,7 @@ include_once "review.php";
         <!-- div is container that holds article summary -->
         <div title="Click the image to view the article!" class="article_container">
             <!-- Link embedded into img, alows user to click into article/review itself -->
-            <a href="article.php?mov_id=<?=$m_id?>">
+            <a href="article.php?rid=<?=$rid?>">
                 <img class="article_img"   height=500 width=300 src="../images/movie/<?= $m_movieImg ?>"/>
             </a>
 
