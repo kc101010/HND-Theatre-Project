@@ -1,0 +1,12 @@
+id,username,password,is_admin,email,is_active
+1,JohnCrimmons,$2y$10$YqsZdpyP4h.l3M380Pzw9.xL5o9fWgqGXtom/vEq26Klxtqqw.Gam,1,email@email.com,1
+2,KenM,$2y$10$7BqgujVSUndWk1XJIJDSCeen9f9i3PZ0l9cskwV5SF.fZsm.97Vq2,0,email@mail.com,1
+3,kc101010,$2y$10$Ezun0LMtzNUL3VGNVtDwSukdqJU.8W61PglOi/CHW/9nmJ2sZpWVi,1,kc101010@gmail.com,0
+4,matt123,$2y$10$BWIAxh0fWxQrZeTXk4BsdevbfgngoqMkeWbTgkpOzhaNO0GzyRnze,0,matt123@fmail.org,1
+5,daniel123345,$2y$10$q1mSnl4ZwGp6qgLXgMp.fui1sIYB7uP6TvWiXlBw5Ht2Y2QcC6sEy,0,daniel123345@fmail.com,0
+6,kate55555,$2y$10$DoqSoo6SI2KN5MiP4axmzehQZJYm3TPE3BYtpeWfZommH0ACsaRHu,0,kate55555@mail.com,1
+7,NeilArmstrong,$2y$10$8rKc3ZhaVwgZKkWiOu/6peQml0TufGUKqYRzWd29.XlWDt1S.J/8u,,neilyboy@nasa.armstrong,0
+8,StarWarsFan1984,$2y$10$yvWcgmFLX2Rc.NtTXpuVmutAx2umakHa47I5AZRdl5hkoLp7vUdc6,,swfan@gmail.com,
+9,testaccount,$2y$10$juJVc/9umdv3MvWXJEuGQuZvdwZ5az6h51aNYlezgsFQuzv4O1/hG,,test@test.test,
+10,karischristie7,$2y$10$SL4vTcmEnBGQScyQR6kK8uQrbufiYnjsxUjoaZj132RFmK4WBsmjO,,edwardcullen@hotmail.com,1
+11,zacefron,$2y$10$REUUmUY4HcZYQ0YLnbmrXOg20gwmoe/acY9T3SMXQU87iBoyUeMYa,,zacefron@outlook.co.uk,1
