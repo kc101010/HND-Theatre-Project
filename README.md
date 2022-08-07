@@ -25,7 +25,7 @@ The Theatre Project is my Main project for 'Developing Websites for Multiplatfor
 
 If you have any issues or questions, please contact me at the following;
 
-	kcTranslationServices@gmx.com
+	kcTranslationServices<(at)>gmx.com
 	
 ### Authored by Project Developer - Kyle Christie (kc101010) ###
 
